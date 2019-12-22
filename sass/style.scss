@@ -1,0 +1,71 @@
+@import "reset";
+
+html {
+  background-color: rgb(241, 241, 241);
+}
+
+img{
+  height: 80px;
+  width: auto;
+}
+.header{
+  background-color: white;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+.footer{
+  background-color: white;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  height: 100px;
+}
+
+.header-top-div{
+  display: inline-flex;
+  justify-content: space-between;
+  width: 100%;
+}
+.header-cart-div{
+  display: flex;
+  flex-direction: column;
+}
+.header-navigation-div {
+  nav{
+    height: 100%;
+
+    ul{
+      li{
+        display: inline;
+        margin-right: 10px;
+      }
+    }
+  }
+}
+.navigation-bar{
+  display: inline-flex;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.all-products{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin-left: 20px;
+  margin-right: 20px;
+  margin-top: 20px;
+  padding: 20px;
+}
+
+.product-div{
+  border: none;
+  margin-bottom: 20px;
+  min-width: 250px;
+  width: 30%;
+  height: 150px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  text-align: center;
+  background-color: white;
+}
+
+.add-to-cart-input{
+  width: 20px;
+}
