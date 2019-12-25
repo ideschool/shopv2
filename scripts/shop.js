@@ -4,11 +4,10 @@ const api = new Api()
 
 class Shop{
 
-
     reloadElement(data){
-        //this.reload = document.querySelector("#product-" + data._id);
+        this.reload = document.querySelector("#product-" + data._id);
         console.log("product-" + data._id);
-        //return this.reload
+        return this.reload
     }
 
     /**
@@ -93,8 +92,10 @@ class Shop{
         this.addToCartButton.className = "add-to-cart-button";
         this.addToCartButton.addEventListener("click", function () {
             api.buy(data._id, {count: document.querySelector("#add-to-cart-input" + data._id).value})
+            //todo:poprawic funkcje reload. nie wiem czemu jej nie widzi, chuba jakis problem z zakresami
                 .then(this.reloadElement(data))
-            console.log(data._id)})
+            //console.log(data._id)
+            })
         return this.addToCartButton
     }
 
