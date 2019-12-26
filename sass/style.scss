@@ -79,3 +79,14 @@ img{
 .cart-items-link{
   text-decoration: none;
 }
+
+.cart-modal{
+  position : fixed;
+  left : 50%;
+  top : 50%;
+  transform: translate(-50%, -50%);
+  background-color: white;
+  border: solid black 2px;
+  width: 400px;
+  height: 300px;
+}
