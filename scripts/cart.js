@@ -14,7 +14,7 @@ class Cart {
             this.cartModal.remove()
         });
         this.cartModal.appendChild(this.closeButton);
-        console.log(this.modalTable)
+        this.cartModal.appendChild(this.modalTable())
         document.documentElement.appendChild(this.cartModal);
     }
     modalTable() {
