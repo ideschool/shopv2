@@ -10,7 +10,7 @@ const cartShow = new Cart();
 
 api.getAll().then(res => shop.showAllProducts(res));
 
-cartShow.cartClick()
+cartShow.cartClick();
 
 
 
